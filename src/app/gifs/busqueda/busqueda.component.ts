@@ -17,7 +17,7 @@ export class BusquedaComponent {
     const valor = this.txtBuscar.nativeElement.value;
 
     if(valor.trim().length === 0){
-      return;
+      return alert('Debe completar el campo');
     }
 
     this.gifServices.buscarGifs( valor );
